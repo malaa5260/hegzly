@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>احجزلي موعد</title>
+    <link rel="icon" href="dist/img/favicon.ico" sizes="16x16">
+    <link rel="stylesheet" href="dist/css/jsRapStar.css" />
+    <link rel="stylesheet" href="dist/css/main.css">
+    <link rel="stylesheet" href="dist/css/stylee.css">
+</head>
+
+<body class="rtl" dir='rtl'>
+
+    <!-- <body> -->
+    <header>
+        <div class="py-3 bg-light border border-right-0 border-left-0 border-top-0 text-center text-lg-right">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="login.html">
+                            <h5 class=" text-dark d-inline-block pl-3">
+                                <img src="dist/img/icon-user.png" class="ml-2" />تسجيل الدخول
+                            </h5>
+                        </a>
+                        <a href="newadd.html">
+                            <h5 class=" text-dark d-inline-block pr-3 border border-bottom-0 border-left-0 border-top-0">
+                                <img src="dist/img/icon-add-user.png" /> مستخدم جديد
+                            </h5>
+
+                        </a>
+                        <div class="d-block d-md-inline-block text-center text-md-left float-md-left">
+                            <a href="#" class=" icon-nav" target="_blank">
+                                <i class="fa fa-instagram"></i>
+                            </a>
+                            <a href="#" class="mr-4  icon-nav" target="_blank">
+                                <i class="fa fa-twitter"></i>
+                            </a>
+                            <a href="#" class="mr-4  icon-nav" target="_blank">
+                                <i class="fa fa-facebook"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- NavBar -->
+        <nav class="navbar navbar-expand-lg py-2 py-lg-5 w-100">
+
+            <div class="container p-0">
+
+                <a class="navbar-brand m-0 p-0" href="#"><img src="dist/img/logo.png" class="m-0 p-0" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html"> الرئيسية <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="gettoknowus.html">تعرف علينا</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="appointmentbooking.html">احجز موعد</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="offers.html">العروض</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news1.html"> أخبارنا</a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="conect_with.html"> اتصل بنا</a>
+
+                        </li>
+                        <a href='#'>
+                            <img src="dist/img/icon-user-1.png" class="mr-4 p-2" width="45" />
+                        </a>
+                        <a href="#">
+                            <i class="fa fa-search mr-4 mt-2 main-color" style="font-size: 28px;"></i>
+                        </a>
+
+                        <!-- <button class="btn px-0 py-2 sec-color">
+                            English
+
+                             <img src='dist/img/icon-lang.png'/>
+                        </button> -->
+
+                    </ul>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+    <div class="start">
+
+        <div class="position-relative">
+            <img src="dist/img/input.jpg" class="w-100 par" />
+            <!-- <div class="container position-absolute next_top px-lg-5 ">
+                <h2 class="text-center text">احجز طبيبك الان</h2>
+                <h3 class="text-white text-center">EHGEZLY</h3>
+
+            </div> -->
+        </div>
+
+    </div>
+    <div class="table_  mb-5">
+        <div class="container card rounded" style="margin-top: -222px;">
+            <div class="row clearfix">
+                <div class="col-lg-3 clearfix pr-0 pl-0 pl-lg-3">
+                    <div class="fir  text-center">
+                        <img src="dist/img/icon-calendar-cpanel.png" alt="" class="d-inline-block mb-3" />
+                        <h3 class="d-inline-block mr-1  h2 mt-3">أحجز طبيبك</h3>
+                    </div>
+                </div>
+                <div class="col-md-10 col-lg-7 col-xl-8  mt-4  mt-lg-2">
+                    <div class="row mb-2">
+                        <div class="col-md-6">
+                            <div class="input-group">
+                                <div class="input-group-append ">
+                                    <span class="input-group-text position-absolute " id="basic-addon2">  <img src='dist/img/icon-stethoscope.png' /></span>
+                                </div>
+                                <select class="form-control position-relative " id="exampleFormControlSelect1">
+
+                                   <option>أختر التخصص</option>
+                                     <option>2</option>
+                                     <option>3</option>
+                                     <option>4</option>
+                                     <option>5</option>
+                                 </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-append ">
+                                    <span class="input-group-text position-absolute " id="basic-addon2">  <img src='dist/img/icon-care.png' /></span>
+                                </div>
+                                <select class="form-control position-relative " id="exampleFormControlSelect1">
+
+                                   <option>أختر المنطقة</option>
+                                     <option>2</option>
+                                     <option>3</option>
+                                     <option>4</option>
+                                     <option>5</option>
+                                 </select>
+                            </div>
+                        </div>
+                        <div class="col-md-6 ">
+                            <div class="input-group">
+                                <div class="input-group-append ">
+                                    <span class="input-group-text position-absolute " id="basic-addon2">  <img src='dist/img/icon-earth.png' /></span>
+                                </div>
+                                <select class="form-control position-relative " id="exampleFormControlSelect1">
+
+                                   <option>أختر المحافظة</option>
+                                     <option>2</option>
+                                     <option>3</option>
+                                     <option>4</option>
+                                     <option>5</option>
+                                 </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-append ">
+                                    <span class="input-group-text position-absolute " id="basic-addon2">  <img src='dist/img/icon-doctor.png' /></span>
+                                </div>
+                                <select class="form-control position-relative " id="exampleFormControlSelect1">
+
+                                   <option> الدكتور أو المستشفي</option>
+                                     <option>2</option>
+                                     <option>3</option>
+                                     <option>4</option>
+                                     <option>5</option>
+                                 </select>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-1 mt-4 mt-lg-3 third px-0 px-md-2 px-lg-3">
+                    <button type="submit" class="btn  main-bk h-90 w-100 "> <a href="#"> ابحث</a></button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <nav aria-label="breadcrumb" class=" bg-light">
+        <div class='container'>
+            <ol class="breadcrumb bg-light py-4">
+                <li class="breadcrumb-item"><a href="index.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">احجز طبيبك</li>
+            </ol>
+
+        </div>
+
+    </nav>
+
+    <div class="rate py-5">
+        <div class="container rate_">
+            <div class="row ">
+                <div class="col-lg-3">
+                    <div class="row">
+                        <div class="col">
+                            <div class="booking-sel ">
+                                <h2 class=" under_ position-relative mb-3 text-dark first">ترتيب</h2>
+                                <select class="form-control " id="exampleFormControlSelect1">
+
+                            <option> التقيمات</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="accordion" id="accordionExample">
+                                <div class="card">
+                                    <div class="card-header" id="headingOne">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              <h2 class=" und_ position-relative mb-3 text-dark ">اللقب</h2>
+                                </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                        <div class="card-body">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">استاذ</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">مدرس</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">استشاري</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">أخصائي</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="accordion" id="accordion_2">
+                                <div class="card">
+                                    <div class="card-header" id="headingtwo">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapsetwo" aria-expanded="true" aria-controls="collapsetwo">
+                              <h2 class=" und_ position-relative mb-3 text-dark ">النوع</h2>
+                                </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsetwo" class="collapse show" aria-labelledby="headingtwo" data-parent="#accordion_2">
+                                        <div class="card-body">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">طبيب</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">طبيبه</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <div class="accordion" id="accordion_3">
+                                <div class="card">
+                                    <div class="card-header" id="headingthree">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapsethree" aria-expanded="true" aria-controls="collapsethree">
+                              <h2 class=" und_ position-relative mb-3 text-dark ">المواعيد المتاحة</h2>
+                                </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsethree" class="collapse show" aria-labelledby="headingthree" data-parent="#accordion_3">
+                                        <div class="card-body">
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">اي يوم</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">اليوم</label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label><input type="checkbox" value="">غدا</label>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-4 mb-5">
+                        <div class="col">
+                            <div class="accordion" id="accordion_4">
+                                <div class="card">
+                                    <div class="card-header" id="headingfour">
+                                        <h2 class="mb-0">
+                                            <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapsefour" aria-expanded="true" aria-controls="collapsefour">
+                              <h2 class=" und_ position-relative mb-3 text-dark ">أسعار الكشف</h2>
+                                </button>
+                                        </h2>
+                                    </div>
+
+                                    <div id="collapsefour" class="collapse show" aria-labelledby="headingfour" data-parent="#accordion_4">
+                                        <div class="card-body">
+
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input type="radio" class="form-check-input" name="optradio">الكل
+                                              </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">أقل من 50
+                                               </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">من 50 الي 100
+                                               </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">من 100 الي 200
+                                               </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio"> من 200الي 300
+                                               </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" name="optradio">أكثر من 300
+                                               </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> //last -->
+                <div class="col-lg-9">
+                    <h3 class="under position-relative mb-3 font-weight-bold">أحجز موعد</h3>
+                    <div class="row pt-4">
+                        <div class="col-md-6 pt-3">
+                            <a href="#">
+                                <div class="card p-3 position-relative pb-5">
+                                    <img src='dist/img/pic1.png' class="img-top" />
+                                    <h3 class=" text-dark mt-3">
+                                        اسم الدكتور
+                                    </h3>
+                                    <div color="#FCC336" value='5' class="demo2"></div>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-stethoscope.png' width="25" />جراحة العيون
+                                    </h5>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-earth.png' width="25" /> دمياط
+                                    </h5>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-receipt.png' width="25" /> سعر الكشف 120
+                                    </h5>
+                                    <p class=" text-black-50 ">بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد ما،</p>
+
+                                    <button class="btn ctrl-standard is-reversed typ-subhed w-100 fx-bubbleUp pt-1 pb-2 rounded-0 position-absolute">احجز اﻻن</button>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <div class="col-md-6 pt-3">
+                            <a href="#">
+                                <div class="card p-3 position-relative pb-5">
+                                    <img src='dist/img/pic1.png' class="img-top" />
+                                    <h3 class=" text-dark mt-3">
+                                        اسم الدكتور
+                                    </h3>
+                                    <div color="#FCC336" value='5' class="demo2"></div>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-stethoscope.png' width="25" />جراحة العيون
+                                    </h5>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-earth.png' width="25" /> دمياط
+                                    </h5>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-receipt.png' width="25" /> سعر الكشف 120
+                                    </h5>
+                                    <p class=" text-black-50 ">بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد ما،</p>
+
+                                    <button class="btn ctrl-standard is-reversed typ-subhed w-100 fx-bubbleUp pt-1 pb-2 rounded-0 position-absolute">احجز اﻻن</button>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <div class="col-md-6 pt-3">
+                            <a href="#">
+                                <div class="card p-3 position-relative pb-5">
+                                    <img src='dist/img/pic1.png' class="img-top" />
+                                    <h3 class=" text-dark mt-3">
+                                        اسم الدكتور
+                                    </h3>
+                                    <div color="#FCC336" value='5' class="demo2"></div>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-stethoscope.png' width="25" />جراحة العيون
+                                    </h5>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-earth.png' width="25" /> دمياط
+                                    </h5>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-receipt.png' width="25" /> سعر الكشف 120
+                                    </h5>
+                                    <p class=" text-black-50 ">بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد ما،</p>
+
+                                    <button class="btn ctrl-standard is-reversed typ-subhed w-100 fx-bubbleUp pt-1 pb-2 rounded-0 position-absolute">احجز اﻻن</button>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <div class="col-md-6 pt-3">
+                            <a href="#">
+                                <div class="card p-3 position-relative pb-5">
+                                    <img src='dist/img/pic1.png' class="img-top" />
+                                    <h3 class=" text-dark mt-3">
+                                        اسم الدكتور
+                                    </h3>
+                                    <div color="#FCC336" value='5' class="demo2"></div>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-stethoscope.png' width="25" />جراحة العيون
+                                    </h5>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-earth.png' width="25" /> دمياط
+                                    </h5>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-receipt.png' width="25" /> سعر الكشف 120
+                                    </h5>
+                                    <p class=" text-black-50 ">بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد ما،</p>
+
+                                    <button class="btn ctrl-standard is-reversed typ-subhed w-100 fx-bubbleUp pt-1 pb-2 rounded-0 position-absolute">احجز اﻻن</button>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <div class="col-md-6 pt-3">
+                            <a href="#">
+                                <div class="card p-3 position-relative pb-5">
+                                    <img src='dist/img/pic1.png' class="img-top" />
+                                    <h3 class=" text-dark mt-3">
+                                        اسم الدكتور
+                                    </h3>
+                                    <div color="#FCC336" value='5' class="demo2"></div>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-stethoscope.png' width="25" />جراحة العيون
+                                    </h5>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-earth.png' width="25" /> دمياط
+                                    </h5>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-receipt.png' width="25" /> سعر الكشف 120
+                                    </h5>
+                                    <p class=" text-black-50 ">بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد ما،</p>
+
+                                    <button class="btn ctrl-standard is-reversed typ-subhed w-100 fx-bubbleUp pt-1 pb-2 rounded-0 position-absolute">احجز اﻻن</button>
+                                </div>
+                            </a>
+
+
+                        </div>
+                        <div class="col-md-6 pt-3">
+                            <a href="#">
+                                <div class="card p-3 position-relative pb-5">
+                                    <img src='dist/img/pic1.png' class="img-top" />
+                                    <h3 class=" text-dark mt-3">
+                                        اسم الدكتور
+                                    </h3>
+                                    <div color="#FCC336" value='5' class="demo2"></div>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-stethoscope.png' width="25" />جراحة العيون
+                                    </h5>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-earth.png' width="25" /> دمياط
+                                    </h5>
+                                    <h5 class=" text-dark">
+                                        <img src='dist/img/icon-receipt.png' width="25" /> سعر الكشف 120
+                                    </h5>
+                                    <p class=" text-black-50 ">بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد ما،</p>
+
+                                    <button class="btn ctrl-standard is-reversed typ-subhed w-100 fx-bubbleUp pt-1 pb-2 rounded-0 position-absolute">احجز اﻻن</button>
+                                </div>
+                            </a>
+
+
+                        </div>
+                    </div>
+
+                    <nav aria-label="...">
+                        <ul class="pagination float-left">
+                            <!-- <li class="page-item disabled">
+                                <span class="page-link">Previous</span>
+                            </li> -->
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item active">
+                                <span class="page-link">
+                                  1
+                                 <span class="sr-only">(current)</span>
+                                </span>
+                            </li>
+                            <!-- <li class="page-item">
+                                <a class="page-link" href="#">Next</a>
+                            </li> -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer class="py-5 mt-5">
+        <div class="container">
+            <div class="row ">
+                <div class="col-lg-4 text-center ">
+                    <img src="dist/img/logo-w.png " class="mb-4 " style="width: 160px; ">
+                    <p class=" text-light text-center lead mb-5 ">
+                        بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد ما
+                    </p>
+                    <a href="# " class=" text-white ">
+                        <i class="fab fa-instagram ml-4 "></i>
+                    </a>
+                    <a href="# " class=" text-white ">
+                        <i class="fab fa-twitter ml-4 "></i>
+                    </a>
+                    <a href="# " class=" text-white ">
+                        <i class="fab fa-facebook-f ml-4 "></i>
+                    </a>
+                </div>
+                <div class="col-lg-4 ">
+                    <h3 class="main-color under-line position-relative mb-5 font-weight-bold ">روابط هامة</h3>
+                    <ul class="contact-ul text-white list-unstyled h5 inline-list ">
+                        <!-- <div class="row ">
+                            <div class="col-md-5 "> -->
+                        <div class="row ">
+                            <div class="col-lg-6">
+                                <li class="mb-3 ">
+                                    <a href="index.html" class=" text-white">الرئيسية</a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="gettoknowus.html" class=" text-white">عن احجزلى موعد</a>
+                                </li>
+
+
+                                <li class="mb-3 ">
+                                    <a href="appointmentbooking.html" class=" text-white">احجز موعد</a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="dector_details.html" class=" text-white">ابحث عن طبيبك</a>
+
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="questionpopular.html" class=" text-white">الأسئلة الشائعة</a>
+
+                                </li>
+
+                            </div>
+                            <div class="col-lg-6">
+                                <li class="mb-3 ">
+                                    <a href="offers.html" class=" text-white">العروض</a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="news1.html" class=" text-white">اﻻخبار</a>
+                                </li>
+
+
+                                <li class="mb-3 ">
+                                    <a href="condition.html" class=" text-white">الشروط و اﻻحكام</a>
+                                </li>
+                                <li class="mb-3 ">
+                                    <a href="conect_with.html" class=" text-white">تواصل معنا</a>
+
+                                </li>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- </div>
+
+                        </div> -->
+
+                    </ul>
+
+                </div>
+                <div class="col-lg-4 ">
+                    <h3 class="main-color under-line position-relative mb-5 font-weight-bold ">هل انت طبيب ؟</h3>
+                    <ul class="text-white list-unstyled h5 ">
+
+                        <li class="mb-3 ">
+                            <a href="# " class="text-white ">انضم الى اطباء احجزلى موعد</a>
+                        </li>
+
+                    </ul>
+                    <div class="mt-5 ">
+                        <div class="row ">
+                            <div class="col-lg-6 ">
+                                <img src='dist/img/app-store.png' />
+                            </div>
+                            <div class="col-lg-6 ">
+                                <img src='dist/img/google-play.png' />
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <div class=" bg-white  link_a">
+        <div class="container py-4">
+            <h5 class="text-black mb-0">جميع الحقوق محفوظة © 2020 <a href="# " class="sec-color "> أحجزلي موعد </a>
+                <a href="#">
+                    <span class="float-md-left text-center d-block d-sm-inline-block mt-3 mt-md-0 mb-lg-2">
+                       <img src='dist/img/smart-level.png' width="200"/>
+                 </span>
+                </a>
+            </h5>
+        </div>
+
+    </div>
+    <!--start ScrollTop-->
+    <a href="#" class="scrolltop " id="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!--end ScrollTop-->
+
+    <div class="over ">
+        <div>
+            <div class="lds-facebook">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="dist/js/jquery.min.js "></script>
+    <script src="dist/js/popper.min.js "></script>
+    <script src="dist/js/bootstrap.min.js "></script>
+    <script src="dist/js/owl.carousel.min.js "></script>
+    <script src="dist/js/jsRapStar.js"></script>
+    <script src="dist/js/main.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('.demo2').jsRapStar({
+                enabled: false,
+                // value: 2,
+                // length: 5
+
+            });
+        });
+    </script>
+
+    <!-- </body> -->
+
+</html>
